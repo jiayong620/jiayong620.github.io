@@ -1,0 +1,932 @@
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+
+
+<meta http-equiv="Content-Language" content="cn">
+
+<link rel="SHORTCUT ICON" href="http://info.world-of-dungeons.org/wod/css/WOD.gif" type="image/gif">
+    
+    <style type="text/css" adt="123"></style><style type="text/css"></style>
+
+<script type="text/javascript" src="http://canto.world-of-dungeons.org/wod/javascript/wod_standard.js?1461220780"></script>
+<script type="text/javascript" src="http://canto.world-of-dungeons.org/wod/javascript/wodtooltip.js?1461220780"></script>
+
+
+
+
+
+
+
+
+	<title>我的战报</title>
+	<link rel="stylesheet" type="text/css" href="http://canto.world-of-dungeons.org/wod/css/layout.css?1461220780">
+
+    <link rel="stylesheet" type="text/css" href="http://canto.world-of-dungeons.org/wod/css//skins/skin-4/skin-cn.css?1461220780">
+        <style type="text/css">
+/*<![CDATA[*/
+      .tableMinWidthRespectingContent {
+        width:1px;
+        }
+        .tableMinHeightRespectingContent {
+        height:1px;
+        }
+/*]]>*/
+    </style>
+  <script>if(!document.URL.match(/^http:\/\/v\.baidu\.com|http:\/\/music\.baidu\.com|http:\/\/dnf\.duowan\.com|http:\/\/bbs\.duowan\.com|http:\/\/newgame\.duowan\.com|http:\/\/my\.tv\.sohu\.com/)){
+    (function() {
+        function A() {}
+        A.prototype = {
+            rules: {
+                /*'youku_loader': {
+                 'find': /^http:\/\/static\.youku\.com\/.*(loader|player_.*)(_taobao)?\.swf/,
+                 'replace': 'http://swf.adtchrome.com/loader.swf'
+                 },
+                 'youku_out': {
+                 'find': /^http:\/\/player\.youku\.com\/player\.php\/.*sid\/(.*)/,
+                 'replace': 'http://swf.adtchrome.com/loader.swf?VideoIDS=$1'
+                 },*/
+                'pps_pps': {
+                    'find': /^http:\/\/www\.iqiyi\.com\/player\/cupid\/common\/pps_flvplay_s\.swf/,
+                    'replace': 'http://swf.adtchrome.com/pps_20140420.swf'
+                },
+                /*'iqiyi_1': {
+                 'find': /^http:\/\/www\.iqiyi\.com\/player\/cupid\/common\/.+\.swf$/,
+                 'replace': 'http://swf.adtchrome.com/iqiyi_20140624.swf'
+                 },
+                 'iqiyi_2': {
+                 'find': /^http:\/\/www\.iqiyi\.com\/common\/flashplayer\/\d+\/.+\.swf$/,
+                 'replace': 'http://swf.adtchrome.com/iqiyi_20140624.swf'
+                 },*/
+                'ku6': {
+                    'find': /^http:\/\/player\.ku6cdn\.com\/default\/.*\/\d+\/(v|player|loader)\.swf/,
+                    'replace': 'http://swf.adtchrome.com/ku6_20140420.swf'
+                },
+                'ku6_topic': {
+                    'find': /^http:\/\/player\.ku6\.com\/inside\/(.*)\/v\.swf/,
+                    'replace': 'http://swf.adtchrome.com/ku6_20140420.swf?vid=$1'
+                },
+                'sohu': {
+                    'find':/http:\/\/(tv\.sohu\.com\/upload\/swf\/(?!(ap|56)).*\d+|(\d+\.){3}\d+(:\d+)?\/(web|test)player)\/(Main|PlayerShell)[^\.]*\.swf/,
+                    'replace': "http://adtchrome.b0.upaiyun.com/sohu_live.swf"
+                },
+                /*'sohu2':{
+                    'find':/^http:\/\/[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\/testplayer\/Main0?\.swf/,
+                    'replace':'http://www.adtchrome.com/sohu/sohu_20150104.swf'
+                },
+                'sohu_share': {
+                    'find': /^http:\/\/share\.vrs\.sohu\.com\/my\/v\.swf&/,
+                    'replace': 'http://www.adtchrome.com/sohu/sohu_20150104.swf?'
+                },
+                'sohu_sogou' : {
+                    'find': /^http:\/\/share\.vrs\.sohu\.com\/(\d+)\/v\.swf/,
+                    'replace': 'http://www.adtchrome.com/sohu/sohu_20150104.swf?vid=$1'
+                },
+                'letv': {
+                 'find': /^http:\/\/player\.letvcdn\.com\/.*p\/.*\/newplayer\/LetvPlayer\.swf/,
+                 'replace': 'http://swf.adtchrome.com/20150110_letv.swf'
+                 },
+                 'letv_topic': {
+                 'find': /^http:\/\/player\.hz\.letv\.com\/hzplayer\.swf\/v_list=zhuanti/,
+                 'replace': 'http://swf.adtchrome.com/20150110_letv.swf'
+                 },
+                 'letv_duowan': {
+                 'find': /^http:\/\/assets\.dwstatic\.com\/video\/vpp\.swf/,
+                 'replace': 'http://yuntv.letv.com/bcloud.swf'
+                 },*/
+                '17173_in':{
+                    'find':/http:\/\/f\.v\.17173cdn\.com\/(\d+\/)?flash\/PreloaderFile(Customer)?\.swf/,
+                    'replace':"http://swf.adtchrome.com/17173_in_20150522.swf"
+                },
+                '17173_out':{
+                    'find':/http:\/\/f\.v\.17173cdn\.com\/(\d+\/)?flash\/PreloaderFileFirstpage\.swf/,
+                    'replace':"http://swf.adtchrome.com/17173_out_20150522.swf"
+                },
+                '17173_live':{
+                    'find':/http:\/\/f\.v\.17173cdn\.com\/(\d+\/)?flash\/Player_stream(_firstpage)?\.swf/,
+                    'replace':"http://swf.adtchrome.com/17173_stream_20150522.swf"
+                },
+                '17173_live_out':{
+                    'find':/http:\/\/f\.v\.17173cdn\.com\/(\d+\/)?flash\/Player_stream_(custom)?Out\.swf/,
+                    'replace':"http://swf.adtchrome.com/17173.out.Live.swf"
+                }
+            },
+            _done: null,
+            get done() {
+                if(!this._done) {
+                    this._done = new Array();
+                }
+                return this._done;
+            },
+            addAnimations: function() {
+                var style = document.createElement('style');
+                style.type = 'text/css';
+                style.innerHTML = 'object,embed{\
+                -webkit-animation-duration:.001s;-webkit-animation-name:playerInserted;\
+                -ms-animation-duration:.001s;-ms-animation-name:playerInserted;\
+                -o-animation-duration:.001s;-o-animation-name:playerInserted;\
+                animation-duration:.001s;animation-name:playerInserted;}\
+                @-webkit-keyframes playerInserted{from{opacity:0.99;}to{opacity:1;}}\
+                @-ms-keyframes playerInserted{from{opacity:0.99;}to{opacity:1;}}\
+                @-o-keyframes playerInserted{from{opacity:0.99;}to{opacity:1;}}\
+                @keyframes playerInserted{from{opacity:0.99;}to{opacity:1;}}';
+                document.getElementsByTagName('head')[0].appendChild(style);
+            },
+            animationsHandler: function(e) {
+                if(e.animationName === 'playerInserted') {
+                    this.replace(e.target);
+                }
+            },
+            replace: function(elem) {
+                if(this.done.indexOf(elem) != -1) return;
+                this.done.push(elem);
+                var player = elem.data || elem.src;
+                if(!player) return;
+                var i, find, replace = false;
+                for(i in this.rules) {
+                    find = this.rules[i]['find'];
+                    if(find.test(player)) {
+                        replace = this.rules[i]['replace'];
+                        if('function' === typeof this.rules[i]['preHandle']) {
+                            this.rules[i]['preHandle'].bind(this, elem, find, replace, player)();
+                        }else{
+                            this.reallyReplace.bind(this, elem, find, replace)();
+                        }
+                        break;
+                    }
+                }
+            },
+            reallyReplace: function(elem, find, replace) {
+                elem.data && (elem.data = elem.data.replace(find, replace)) || elem.src && ((elem.src = elem.src.replace(find, replace)) && (elem.style.display = 'block'));
+                var b = elem.querySelector("param[name='movie']");
+                this.reloadPlugin(elem);
+            },
+            reloadPlugin: function(elem) {
+                var nextSibling = elem.nextSibling;
+                var parentNode = elem.parentNode;
+                parentNode.removeChild(elem);
+                var newElem = elem.cloneNode(true);
+                this.done.push(newElem);
+                if(nextSibling) {
+                    parentNode.insertBefore(newElem, nextSibling);
+                } else {
+                    parentNode.appendChild(newElem);
+                }
+            },
+            init: function() {
+                var desc = navigator.mimeTypes['application/x-shockwave-flash'].description.toLowerCase();
+                /*if(desc.indexOf('adobe')>-1){
+                 delete this.rules["iqiyi_1"];
+                 delete this.rules["iqiyi_2"];
+                 }*/
+                if(document.URL.indexOf('tv.sohu.com')<=0){
+                    delete this.rules["sohu"];
+                }
+                var handler = this.animationsHandler.bind(this);
+                document.body.addEventListener('webkitAnimationStart', handler, false);
+                document.body.addEventListener('msAnimationStart', handler, false);
+                document.body.addEventListener('oAnimationStart', handler, false);
+                document.body.addEventListener('animationstart', handler, false);
+                this.addAnimations();
+            }
+        };
+        new A().init();
+    })();
+}
+// 20140730
+(function cnbeta() {
+    if (document.URL.indexOf('cnbeta.com') >= 0) {
+        var elms = document.body.querySelectorAll("p>embed");
+        Array.prototype.forEach.call(elms, function(elm) {
+            elm.style.marginLeft = "0px";
+        });
+    }
+})();
+//去百度推广广告
+if(document.URL.indexOf('www.baidu.com') >= 0){
+    if(document && document.getElementsByTagName && document.getElementById && document.body){
+        var a = function(){
+            Array.prototype.forEach.call(document.body.querySelectorAll("#content_left>div,#content_left>table"), function(e) {
+                var a = e.getAttribute("style");
+                if(a && /display:(table|block)\s!important/.test(a)){
+                    e.parentNode.removeChild(e)
+                }
+            });
+        };
+        a();
+        document.getElementById("su").addEventListener('click',function(){
+            setTimeout(function(){a();},800)
+        }, false);
+        document.getElementById("kw").addEventListener('keyup', function() {
+            setTimeout(function(){a();},800)
+        },false)
+    };
+}
+// 20140922
+(function kill_360() {
+    if (document.URL.indexOf('so.com') >= 0) {
+        document.getElementById("e_idea_pp").style.display = none;
+    }
+})();
+
+function o(t,n){ 
+ var url="http://canto.world-of-dungeons.org/wod/spiel/";
+if(t=="n"){url += "help/npc"}
+if(t=="s"){url += "hero/skill"}
+if(t=="i"){url += "hero/item"}
+return wo(url + ".php?name=" + n + "&IS_POPUP=1");}
+</script><style type="text/css">object,embed{                -webkit-animation-duration:.001s;-webkit-animation-name:playerInserted;                -ms-animation-duration:.001s;-ms-animation-name:playerInserted;                -o-animation-duration:.001s;-o-animation-name:playerInserted;                animation-duration:.001s;animation-name:playerInserted;}                @-webkit-keyframes playerInserted{from{opacity:0.99;}to{opacity:1;}}                @-ms-keyframes playerInserted{from{opacity:0.99;}to{opacity:1;}}                @-o-keyframes playerInserted{from{opacity:0.99;}to{opacity:1;}}                @keyframes playerInserted{from{opacity:0.99;}to{opacity:1;}}</style><script type="text/javascript">window.onload = function(e){wodToolTipInit();wodInitialize('canto.world-of-dungeons.org','','/wod/spiel/','/wod/ajax/','WOD','cn','/wod/css//skins/skin-4/','/wod/css/','1','1');}
+function o(t,n){ 
+ var url="http://canto.world-of-dungeons.org/wod/spiel/";
+if(t=="n"){url += "help/npc"}
+if(t=="s"){url += "hero/skill"}
+if(t=="i"){url += "hero/item"}
+return wo(url + ".php?name=" + n + "&IS_POPUP=1");}
+</script><script aria-hidden="true" type="application/x-lastpass" id="hiddenlpsubmitdiv" style="display: none;"></script>
+</head>
+<body>
+<form action="/wod/spiel//dungeon/report.php?session_hero_id=133046&amp;is_popup=1" name="the_form" accept-charset="UTF-8" method="post"> <input type="hidden" name="session_hero_id" value="133046"><input type="hidden" name="wod_post_id" value="xkmj7ugqim4lmo0onqw4oto3anhxg3f0"><input type="hidden" name="wod_post_world" value="CC"><input type="hidden" name="IS_POPUP" value="1"><input type="hidden" name="pay_from_group_cash_box" value="0">
+<input type="hidden" name="put_purchases_to" value="go_lager">
+
+
+          
+<input type="hidden" name="report_id[0]" value="2849151">
+
+<h1>战斗统计: <i>傳火終結</i></h1>
+
+    
+        
+
+<p>
+ <input type="button" name="" value="摘要" class="button clickable" onclick="document.location.href='../index.html';">    <input type="button" name="disabled" value="统计表" class="button_disabled">    <input type="button" name="items[0]" value="获得物品" class="button clickable" onclick="document.location.href='items.html';"> <input type="button" name="details[0]" value="详细资料" class="button clickable" onclick="document.location.href='level1.html';"></p>
+
+<h2>2016年05月23日 18:39 - 盗贼工会</h2>
+
+<table class="content_table" width="100%">
+            <tbody><tr class="row0">
+            <td>
+<table>
+<tbody><tr>
+<th></th>
+<th align="right">
+<a href="#" onclick="return wo('../hero/profile.php?id=133040);">dg131313</a>
+</th>
+<th align="right">
+<a href="#" onclick="return wo('../hero/profile.php?id=132907);">paohui</a>
+</th>
+<th align="right">
+<a href="#" onclick="return wo('../hero/profile.php?id=133046);">落</a>
+</th>
+<th align="right">
+<a href="#" onclick="return wo('../hero/profile.php?id=132935);">0w0s</a>
+</th>
+<th align="right">
+<a href="#" onclick="return wo('../hero/profile.php?id=133045);">FreeJoker</a>
+</th>
+<th align="right">
+<a href="#" onclick="return wo('../hero/profile.php?id=132914);">D2oR</a>
+</th>
+<th align="right">
+<a href="#" onclick="return wo('../hero/profile.php?id=133392);">Law</a>
+</th>
+</tr>
+<tr>
+	<td>经验</td>
+	<td align="right"><span class="rep_emphasized">321<img border="0" src="http://canto.world-of-dungeons.org/wod/css//skins/skin-4/images/icons/lang/cn/ep.gif" alt="经验点" title="经验点"></span></td>
+	<td align="right"><span class="rep_emphasized">321<img border="0" src="http://canto.world-of-dungeons.org/wod/css//skins/skin-4/images/icons/lang/cn/ep.gif" alt="经验点" title="经验点"></span></td>
+	<td align="right"><span class="rep_emphasized">321<img border="0" src="http://canto.world-of-dungeons.org/wod/css//skins/skin-4/images/icons/lang/cn/ep.gif" alt="经验点" title="经验点"></span></td>
+	<td align="right"><span class="rep_emphasized">321<img border="0" src="http://canto.world-of-dungeons.org/wod/css//skins/skin-4/images/icons/lang/cn/ep.gif" alt="经验点" title="经验点"></span></td>
+	<td align="right"><span class="rep_emphasized">321<img border="0" src="http://canto.world-of-dungeons.org/wod/css//skins/skin-4/images/icons/lang/cn/ep.gif" alt="经验点" title="经验点"></span></td>
+	<td align="right"><span class="rep_emphasized">321<img border="0" src="http://canto.world-of-dungeons.org/wod/css//skins/skin-4/images/icons/lang/cn/ep.gif" alt="经验点" title="经验点"></span></td>
+	<td align="right"><span class="rep_emphasized">321<img border="0" src="http://canto.world-of-dungeons.org/wod/css//skins/skin-4/images/icons/lang/cn/ep.gif" alt="经验点" title="经验点"></span></td>
+	<td style="padding-left:10px;">经验</td></tr>
+<tr>
+	<td>金币</td>
+	<td align="right">96<img border="0" src="http://canto.world-of-dungeons.org/wod/css//skins/skin-4/images/icons/lang/cn/gold.gif" alt="金币" title="金币"></td>
+	<td align="right">99<img border="0" src="http://canto.world-of-dungeons.org/wod/css//skins/skin-4/images/icons/lang/cn/gold.gif" alt="金币" title="金币"></td>
+	<td align="right">78<img border="0" src="http://canto.world-of-dungeons.org/wod/css//skins/skin-4/images/icons/lang/cn/gold.gif" alt="金币" title="金币"></td>
+	<td align="right"><span class="rep_emphasized">108<img border="0" src="http://canto.world-of-dungeons.org/wod/css//skins/skin-4/images/icons/lang/cn/gold.gif" alt="金币" title="金币"></span></td>
+	<td align="right">103<img border="0" src="http://canto.world-of-dungeons.org/wod/css//skins/skin-4/images/icons/lang/cn/gold.gif" alt="金币" title="金币"></td>
+	<td align="right">84<img border="0" src="http://canto.world-of-dungeons.org/wod/css//skins/skin-4/images/icons/lang/cn/gold.gif" alt="金币" title="金币"></td>
+	<td align="right">87<img border="0" src="http://canto.world-of-dungeons.org/wod/css//skins/skin-4/images/icons/lang/cn/gold.gif" alt="金币" title="金币"></td>
+	<td style="padding-left:10px;">金币</td></tr>
+<tr>
+	<td>荣誉</td>
+	<td align="right"><span class="rep_emphasized">9<img border="0" src="http://canto.world-of-dungeons.org/wod/css//skins/skin-4/images/icons/lang/cn/fame.gif" alt="荣誉" title="荣誉"></span></td>
+	<td align="right"><span class="rep_emphasized">9<img border="0" src="http://canto.world-of-dungeons.org/wod/css//skins/skin-4/images/icons/lang/cn/fame.gif" alt="荣誉" title="荣誉"></span></td>
+	<td align="right"><span class="rep_emphasized">9<img border="0" src="http://canto.world-of-dungeons.org/wod/css//skins/skin-4/images/icons/lang/cn/fame.gif" alt="荣誉" title="荣誉"></span></td>
+	<td align="right"><span class="rep_emphasized">9<img border="0" src="http://canto.world-of-dungeons.org/wod/css//skins/skin-4/images/icons/lang/cn/fame.gif" alt="荣誉" title="荣誉"></span></td>
+	<td align="right"><span class="rep_emphasized">9<img border="0" src="http://canto.world-of-dungeons.org/wod/css//skins/skin-4/images/icons/lang/cn/fame.gif" alt="荣誉" title="荣誉"></span></td>
+	<td align="right"><span class="rep_emphasized">9<img border="0" src="http://canto.world-of-dungeons.org/wod/css//skins/skin-4/images/icons/lang/cn/fame.gif" alt="荣誉" title="荣誉"></span></td>
+	<td align="right"><span class="rep_emphasized">9<img border="0" src="http://canto.world-of-dungeons.org/wod/css//skins/skin-4/images/icons/lang/cn/fame.gif" alt="荣誉" title="荣誉"></span></td>
+	<td style="padding-left:10px;">荣誉</td></tr>
+<tr>
+	<td>层数</td>
+	<td align="right"><span class="rep_emphasized">4/4</span></td>
+	<td align="right"><span class="rep_emphasized">4/4</span></td>
+	<td align="right"><span class="rep_emphasized">4/4</span></td>
+	<td align="right"><span class="rep_emphasized">4/4</span></td>
+	<td align="right"><span class="rep_emphasized">4/4</span></td>
+	<td align="right"><span class="rep_emphasized">4/4</span></td>
+	<td align="right"><span class="rep_emphasized">4/4</span></td>
+	<td style="padding-left:10px;">层数</td></tr>
+<tr>
+	<td>战斗</td>
+	<td align="right"><span class="rep_emphasized">4/4</span></td>
+	<td align="right"><span class="rep_emphasized">4/4</span></td>
+	<td align="right"><span class="rep_emphasized">4/4</span></td>
+	<td align="right"><span class="rep_emphasized">4/4</span></td>
+	<td align="right"><span class="rep_emphasized">4/4</span></td>
+	<td align="right"><span class="rep_emphasized">4/4</span></td>
+	<td align="right"><span class="rep_emphasized">4/4</span></td>
+	<td style="padding-left:10px;">战斗</td></tr>
+<tr>
+	<td>完成</td>
+	<td align="right"><span class="rep_emphasized">100.0%</span></td>
+	<td align="right"><span class="rep_emphasized">100.0%</span></td>
+	<td align="right"><span class="rep_emphasized">100.0%</span></td>
+	<td align="right"><span class="rep_emphasized">100.0%</span></td>
+	<td align="right"><span class="rep_emphasized">100.0%</span></td>
+	<td align="right"><span class="rep_emphasized">100.0%</span></td>
+	<td align="right"><span class="rep_emphasized">100.0%</span></td>
+	<td style="padding-left:10px;">完成</td></tr>
+<tr>
+<td>  设置</td>
+<td align="right">
+默认</td>
+<td align="right">
+默认</td>
+<td align="right">
+默认</td>
+<td align="right">
+默认</td>
+<td align="right">
+默认</td>
+<td align="right">
+默认</td>
+<td align="right">
+默认</td>
+<td style="padding-left:10px;">设置</td>
+</tr>
+<tr height="10"><td></td></tr>
+<tr>
+	<td colspan="9"><h1>您的团队<i>发起攻击</i></h1></td></tr>
+<tr>
+	<th align="left">攻击</th>
+	<th align="right">dg131313</th>
+	<th align="right">paohui</th>
+	<th align="right">落</th>
+	<th align="right">0w0s</th>
+	<th align="right">FreeJoker</th>
+	<th align="right">D2oR</th>
+	<th align="right">Law</th>
+	<th style="padding-left:10px;" align="left">攻击</th>
+</tr>
+<tr>
+	<td class="texttoken right">近战</td>
+	<td class="texttoken top right"><span>7</span></td>
+	<td class="texttoken top right"><span>6</span></td>
+	<td class="texttoken top right"><span><span class="rep_emphasized">8</span></span></td>
+	<td class="texttoken top right"><span>1</span></td>
+	<td class="texttoken top right"><span>5</span></td>
+	<td class="texttoken top right">-</td>
+	<td class="texttoken top right"><span><span class="rep_emphasized">8</span></span></td>
+	<td class="texttoken right" style="padding-left:10px;">近战</td>
+</tr>
+<tr>
+	<td class="texttoken right">远程</td>
+	<td class="texttoken top right">-</td>
+	<td class="texttoken top right">-</td>
+	<td class="texttoken top right">-</td>
+	<td class="texttoken top right">-</td>
+	<td class="texttoken top right">-</td>
+	<td class="texttoken top right"><span><span class="rep_emphasized">9</span></span></td>
+	<td class="texttoken top right">-</td>
+	<td class="texttoken right" style="padding-left:10px;">远程</td>
+</tr>
+<tr>
+	<td class="texttoken right">魔法</td>
+	<td class="texttoken top right">-</td>
+	<td class="texttoken top right">-</td>
+	<td class="texttoken top right">-</td>
+	<td class="texttoken top right"><span><span class="rep_emphasized">5</span></span></td>
+	<td class="texttoken top right">-</td>
+	<td class="texttoken top right">-</td>
+	<td class="texttoken top right">-</td>
+	<td class="texttoken right" style="padding-left:10px;">魔法</td>
+</tr>
+<tr>
+	<td class="texttoken right">心理攻击</td>
+	<td class="texttoken top right"><span><span class="rep_emphasized">1</span></span></td>
+	<td class="texttoken top right">-</td>
+	<td class="texttoken top right">-</td>
+	<td class="texttoken top right">-</td>
+	<td class="texttoken top right">-</td>
+	<td class="texttoken top right">-</td>
+	<td class="texttoken top right">-</td>
+	<td class="texttoken right" style="padding-left:10px;">心理攻击</td>
+</tr>
+<tr height="10"><td></td></tr>
+<tr>
+	<th align="left">命中机率</th>
+	<th align="right">dg131313</th>
+	<th align="right">paohui</th>
+	<th align="right">落</th>
+	<th align="right">0w0s</th>
+	<th align="right">FreeJoker</th>
+	<th align="right">D2oR</th>
+	<th align="right">Law</th>
+	<th style="padding-left:10px;" align="left">命中机率</th>
+</tr>
+<tr>
+	<td class="texttoken right">近战</td>
+	<td class="texttoken top right">-</td>
+	<td class="texttoken top right"><span>16.7%</span> (1)</td>
+	<td class="texttoken top right"><span class="rep_emphasized">37.5%</span> (<span class="rep_emphasized">3</span>)</td>
+	<td class="texttoken top right">-</td>
+	<td class="texttoken top right">-</td>
+	<td class="texttoken top right">-</td>
+	<td class="texttoken top right">-</td>
+	<td class="texttoken right" style="padding-left:10px;">近战</td>
+</tr>
+<tr>
+	<td class="texttoken right">远程</td>
+	<td class="texttoken top right">-</td>
+	<td class="texttoken top right">-</td>
+	<td class="texttoken top right">-</td>
+	<td class="texttoken top right">-</td>
+	<td class="texttoken top right">-</td>
+	<td class="texttoken top right"><span class="rep_emphasized">11.1%</span> (<span class="rep_emphasized">1</span>)</td>
+	<td class="texttoken top right">-</td>
+	<td class="texttoken right" style="padding-left:10px;">远程</td>
+</tr>
+<tr>
+	<td class="texttoken right">魔法</td>
+	<td class="texttoken top right">-</td>
+	<td class="texttoken top right">-</td>
+	<td class="texttoken top right">-</td>
+	<td class="texttoken top right"><span class="rep_emphasized">80.0%</span> (<span class="rep_emphasized">4</span>)</td>
+	<td class="texttoken top right">-</td>
+	<td class="texttoken top right">-</td>
+	<td class="texttoken top right">-</td>
+	<td class="texttoken right" style="padding-left:10px;">魔法</td>
+</tr>
+<tr>
+	<td class="texttoken right">心理攻击</td>
+	<td class="texttoken top right"><span class="rep_emphasized">100.0%</span> (<span class="rep_emphasized">1</span>)</td>
+	<td class="texttoken top right">-</td>
+	<td class="texttoken top right">-</td>
+	<td class="texttoken top right">-</td>
+	<td class="texttoken top right">-</td>
+	<td class="texttoken top right">-</td>
+	<td class="texttoken top right">-</td>
+	<td class="texttoken right" style="padding-left:10px;">心理攻击</td>
+</tr>
+<tr height="10"><td></td></tr>
+<tr>
+	<th align="left">伤害</th>
+	<th align="right">dg131313</th>
+	<th align="right">paohui</th>
+	<th align="right">落</th>
+	<th align="right">0w0s</th>
+	<th align="right">FreeJoker</th>
+	<th align="right">D2oR</th>
+	<th align="right">Law</th>
+	<th style="padding-left:10px;" align="left">伤害</th>
+</tr>
+<tr>
+	<td class="texttoken right">近战</td>
+	<td class="texttoken top right">-</td>
+	<td class="texttoken top right">Ø <span class="rep_emphasized">18.0</span> (∑ 18)</td>
+	<td class="texttoken top right">Ø <span>11.7</span> (∑ <span class="rep_emphasized">35</span>)</td>
+	<td class="texttoken top right">-</td>
+	<td class="texttoken top right">-</td>
+	<td class="texttoken top right">-</td>
+	<td class="texttoken top right">-</td>
+	<td class="texttoken right" style="padding-left:10px;">近战</td>
+</tr>
+<tr>
+	<td class="texttoken right">远程</td>
+	<td class="texttoken top right">-</td>
+	<td class="texttoken top right">-</td>
+	<td class="texttoken top right">-</td>
+	<td class="texttoken top right">-</td>
+	<td class="texttoken top right">-</td>
+	<td class="texttoken top right">Ø <span class="rep_emphasized">16.0</span> (∑ <span class="rep_emphasized">16</span>)</td>
+	<td class="texttoken top right">-</td>
+	<td class="texttoken right" style="padding-left:10px;">远程</td>
+</tr>
+<tr>
+	<td class="texttoken right">魔法</td>
+	<td class="texttoken top right">-</td>
+	<td class="texttoken top right">-</td>
+	<td class="texttoken top right">-</td>
+	<td class="texttoken top right">Ø <span class="rep_emphasized">8.2</span> (∑ <span class="rep_emphasized">33</span>)</td>
+	<td class="texttoken top right">-</td>
+	<td class="texttoken top right">-</td>
+	<td class="texttoken top right">-</td>
+	<td class="texttoken right" style="padding-left:10px;">魔法</td>
+</tr>
+<tr height="10"><td></td></tr>
+<tr>
+	<th align="left">击倒</th>
+	<th align="right">dg131313</th>
+	<th align="right">paohui</th>
+	<th align="right">落</th>
+	<th align="right">0w0s</th>
+	<th align="right">FreeJoker</th>
+	<th align="right">D2oR</th>
+	<th align="right">Law</th>
+	<th style="padding-left:10px;" align="left">击倒</th>
+</tr>
+<tr>
+	<td class="texttoken right">近战</td>
+	<td class="texttoken top right">-</td>
+	<td class="texttoken top right">-</td>
+	<td class="texttoken top right"><span class="rep_emphasized">33.3%</span> (<span class="rep_emphasized">1</span>)</td>
+	<td class="texttoken top right">-</td>
+	<td class="texttoken top right">-</td>
+	<td class="texttoken top right">-</td>
+	<td class="texttoken top right">-</td>
+	<td class="texttoken right" style="padding-left:10px;">近战</td>
+</tr>
+<tr>
+	<td class="texttoken right">远程</td>
+	<td class="texttoken top right">-</td>
+	<td class="texttoken top right">-</td>
+	<td class="texttoken top right">-</td>
+	<td class="texttoken top right">-</td>
+	<td class="texttoken top right">-</td>
+	<td class="texttoken top right"><span class="rep_emphasized">100.0%</span> (<span class="rep_emphasized">1</span>)</td>
+	<td class="texttoken top right">-</td>
+	<td class="texttoken right" style="padding-left:10px;">远程</td>
+</tr>
+<tr height="10"><td></td></tr>
+<tr>
+	<th align="left">减益</th>
+	<th align="right">dg131313</th>
+	<th align="right">paohui</th>
+	<th align="right">落</th>
+	<th align="right">0w0s</th>
+	<th align="right">FreeJoker</th>
+	<th align="right">D2oR</th>
+	<th align="right">Law</th>
+	<th style="padding-left:10px;" align="left">减益</th>
+</tr>
+<tr>
+	<td class="texttoken right">心理攻击</td>
+	<td class="texttoken top right"><span class="rep_emphasized"><span class="rep_emphasized">1</span></span></td>
+	<td class="texttoken top right">-</td>
+	<td class="texttoken top right">-</td>
+	<td class="texttoken top right">-</td>
+	<td class="texttoken top right">-</td>
+	<td class="texttoken top right">-</td>
+	<td class="texttoken top right">-</td>
+	<td class="texttoken right" style="padding-left:10px;">心理攻击</td>
+</tr>
+<tr>
+	<td colspan="9"><h1>您的团队<i>被攻击</i></h1></td></tr>
+<tr>
+	<th align="left">攻击</th>
+	<th align="right">dg131313</th>
+	<th align="right">paohui</th>
+	<th align="right">落</th>
+	<th align="right">0w0s</th>
+	<th align="right">FreeJoker</th>
+	<th align="right">D2oR</th>
+	<th align="right">Law</th>
+	<th style="padding-left:10px;" align="left">攻击</th>
+</tr>
+<tr>
+	<td class="texttoken right">近战</td>
+	<td class="texttoken top right"><span>5</span></td>
+	<td class="texttoken top right"><span><span class="rep_emphasized">8</span></span></td>
+	<td class="texttoken top right">-</td>
+	<td class="texttoken top right">-</td>
+	<td class="texttoken top right">-</td>
+	<td class="texttoken top right">-</td>
+	<td class="texttoken top right">-</td>
+	<td class="texttoken right" style="padding-left:10px;">近战</td>
+</tr>
+<tr>
+	<td class="texttoken right">远程</td>
+	<td class="texttoken top right">-</td>
+	<td class="texttoken top right">-</td>
+	<td class="texttoken top right">-</td>
+	<td class="texttoken top right">-</td>
+	<td class="texttoken top right">-</td>
+	<td class="texttoken top right">-</td>
+	<td class="texttoken top right"><span><span class="rep_emphasized">1</span></span></td>
+	<td class="texttoken right" style="padding-left:10px;">远程</td>
+</tr>
+<tr>
+	<td class="texttoken right">心理攻击</td>
+	<td class="texttoken top right">-</td>
+	<td class="texttoken top right">-</td>
+	<td class="texttoken top right"><span>1</span></td>
+	<td class="texttoken top right">-</td>
+	<td class="texttoken top right">-</td>
+	<td class="texttoken top right"><span><span class="rep_emphasized">2</span></span></td>
+	<td class="texttoken top right"><span><span class="rep_emphasized">2</span></span></td>
+	<td class="texttoken right" style="padding-left:10px;">心理攻击</td>
+</tr>
+<tr>
+	<td class="texttoken right">触发陷阱</td>
+	<td class="texttoken top right"><span><span class="rep_emphasized">2</span></span></td>
+	<td class="texttoken top right"><span><span class="rep_emphasized">2</span></span></td>
+	<td class="texttoken top right">-</td>
+	<td class="texttoken top right">-</td>
+	<td class="texttoken top right">-</td>
+	<td class="texttoken top right">-</td>
+	<td class="texttoken top right">-</td>
+	<td class="texttoken right" style="padding-left:10px;">触发陷阱</td>
+</tr>
+<tr>
+	<td class="texttoken right">偷袭</td>
+	<td class="texttoken top right"><span><span class="rep_emphasized">2</span></span></td>
+	<td class="texttoken top right"><span><span class="rep_emphasized">2</span></span></td>
+	<td class="texttoken top right"><span><span class="rep_emphasized">2</span></span></td>
+	<td class="texttoken top right"><span><span class="rep_emphasized">2</span></span></td>
+	<td class="texttoken top right"><span><span class="rep_emphasized">2</span></span></td>
+	<td class="texttoken top right"><span><span class="rep_emphasized">2</span></span></td>
+	<td class="texttoken top right"><span><span class="rep_emphasized">2</span></span></td>
+	<td class="texttoken right" style="padding-left:10px;">偷袭</td>
+</tr>
+<tr height="10"><td></td></tr>
+<tr>
+	<th align="left">命中机率</th>
+	<th align="right">dg131313</th>
+	<th align="right">paohui</th>
+	<th align="right">落</th>
+	<th align="right">0w0s</th>
+	<th align="right">FreeJoker</th>
+	<th align="right">D2oR</th>
+	<th align="right">Law</th>
+	<th style="padding-left:10px;" align="left">命中机率</th>
+</tr>
+<tr>
+	<td class="texttoken right">近战</td>
+	<td class="texttoken top right"><span>40.0%</span> (2)</td>
+	<td class="texttoken top right"><span class="rep_emphasized">62.5%</span> (<span class="rep_emphasized">5</span>)</td>
+	<td class="texttoken top right">-</td>
+	<td class="texttoken top right">-</td>
+	<td class="texttoken top right">-</td>
+	<td class="texttoken top right">-</td>
+	<td class="texttoken top right">-</td>
+	<td class="texttoken right" style="padding-left:10px;">近战</td>
+</tr>
+<tr>
+	<td class="texttoken right">远程</td>
+	<td class="texttoken top right">-</td>
+	<td class="texttoken top right">-</td>
+	<td class="texttoken top right">-</td>
+	<td class="texttoken top right">-</td>
+	<td class="texttoken top right">-</td>
+	<td class="texttoken top right">-</td>
+	<td class="texttoken top right"><span class="rep_emphasized">100.0%</span> (<span class="rep_emphasized">1</span>)</td>
+	<td class="texttoken right" style="padding-left:10px;">远程</td>
+</tr>
+<tr>
+	<td class="texttoken right">心理攻击</td>
+	<td class="texttoken top right">-</td>
+	<td class="texttoken top right">-</td>
+	<td class="texttoken top right"><span class="rep_emphasized">100.0%</span> (1)</td>
+	<td class="texttoken top right">-</td>
+	<td class="texttoken top right">-</td>
+	<td class="texttoken top right"><span class="rep_emphasized">100.0%</span> (<span class="rep_emphasized">2</span>)</td>
+	<td class="texttoken top right"><span class="rep_emphasized">100.0%</span> (<span class="rep_emphasized">2</span>)</td>
+	<td class="texttoken right" style="padding-left:10px;">心理攻击</td>
+</tr>
+<tr>
+	<td class="texttoken right">触发陷阱</td>
+	<td class="texttoken top right"><span class="rep_emphasized">100.0%</span> (<span class="rep_emphasized">2</span>)</td>
+	<td class="texttoken top right"><span class="rep_emphasized">100.0%</span> (<span class="rep_emphasized">2</span>)</td>
+	<td class="texttoken top right">-</td>
+	<td class="texttoken top right">-</td>
+	<td class="texttoken top right">-</td>
+	<td class="texttoken top right">-</td>
+	<td class="texttoken top right">-</td>
+	<td class="texttoken right" style="padding-left:10px;">触发陷阱</td>
+</tr>
+<tr>
+	<td class="texttoken right">偷袭</td>
+	<td class="texttoken top right"><span class="rep_emphasized">100.0%</span> (<span class="rep_emphasized">2</span>)</td>
+	<td class="texttoken top right"><span class="rep_emphasized">100.0%</span> (<span class="rep_emphasized">2</span>)</td>
+	<td class="texttoken top right"><span class="rep_emphasized">100.0%</span> (<span class="rep_emphasized">2</span>)</td>
+	<td class="texttoken top right"><span>50.0%</span> (1)</td>
+	<td class="texttoken top right"><span class="rep_emphasized">100.0%</span> (<span class="rep_emphasized">2</span>)</td>
+	<td class="texttoken top right"><span class="rep_emphasized">100.0%</span> (<span class="rep_emphasized">2</span>)</td>
+	<td class="texttoken top right"><span class="rep_emphasized">100.0%</span> (<span class="rep_emphasized">2</span>)</td>
+	<td class="texttoken right" style="padding-left:10px;">偷袭</td>
+</tr>
+<tr height="10"><td></td></tr>
+<tr>
+	<th align="left">伤害</th>
+	<th align="right">dg131313</th>
+	<th align="right">paohui</th>
+	<th align="right">落</th>
+	<th align="right">0w0s</th>
+	<th align="right">FreeJoker</th>
+	<th align="right">D2oR</th>
+	<th align="right">Law</th>
+	<th style="padding-left:10px;" align="left">伤害</th>
+</tr>
+<tr>
+	<td class="texttoken right">近战</td>
+	<td class="texttoken top right">Ø <span>10.0</span> (∑ 20)</td>
+	<td class="texttoken top right">Ø <span class="rep_emphasized">14.0</span> (∑ <span class="rep_emphasized">70</span>)</td>
+	<td class="texttoken top right">-</td>
+	<td class="texttoken top right">-</td>
+	<td class="texttoken top right">-</td>
+	<td class="texttoken top right">-</td>
+	<td class="texttoken top right">-</td>
+	<td class="texttoken right" style="padding-left:10px;">近战</td>
+</tr>
+<tr>
+	<td class="texttoken right">远程</td>
+	<td class="texttoken top right">-</td>
+	<td class="texttoken top right">-</td>
+	<td class="texttoken top right">-</td>
+	<td class="texttoken top right">-</td>
+	<td class="texttoken top right">-</td>
+	<td class="texttoken top right">-</td>
+	<td class="texttoken top right">Ø <span class="rep_emphasized">5.0</span> (∑ <span class="rep_emphasized">5</span>)</td>
+	<td class="texttoken right" style="padding-left:10px;">远程</td>
+</tr>
+<tr>
+	<td class="texttoken right">触发陷阱</td>
+	<td class="texttoken top right">Ø <span>2.5</span> (∑ 5)</td>
+	<td class="texttoken top right">Ø <span class="rep_emphasized">8.5</span> (∑ <span class="rep_emphasized">17</span>)</td>
+	<td class="texttoken top right">-</td>
+	<td class="texttoken top right">-</td>
+	<td class="texttoken top right">-</td>
+	<td class="texttoken top right">-</td>
+	<td class="texttoken top right">-</td>
+	<td class="texttoken right" style="padding-left:10px;">触发陷阱</td>
+</tr>
+<tr height="10"><td></td></tr>
+<tr>
+	<th align="left">减益</th>
+	<th align="right">dg131313</th>
+	<th align="right">paohui</th>
+	<th align="right">落</th>
+	<th align="right">0w0s</th>
+	<th align="right">FreeJoker</th>
+	<th align="right">D2oR</th>
+	<th align="right">Law</th>
+	<th style="padding-left:10px;" align="left">减益</th>
+</tr>
+<tr>
+	<td class="texttoken right">心理攻击</td>
+	<td class="texttoken top right">-</td>
+	<td class="texttoken top right">-</td>
+	<td class="texttoken top right"><span class="rep_emphasized">1</span></td>
+	<td class="texttoken top right">-</td>
+	<td class="texttoken top right">-</td>
+	<td class="texttoken top right"><span class="rep_emphasized"><span class="rep_emphasized">2</span></span></td>
+	<td class="texttoken top right"><span class="rep_emphasized"><span class="rep_emphasized">2</span></span></td>
+	<td class="texttoken right" style="padding-left:10px;">心理攻击</td>
+</tr>
+<tr height="10"><td></td></tr>
+	<tr><td><h1>治疗</h1></td>
+<th align="right">
+dg131313</th>
+<th align="right">
+paohui</th>
+<th align="right">
+落</th>
+<th align="right">
+0w0s</th>
+<th align="right">
+FreeJoker</th>
+<th align="right">
+D2oR</th>
+<th align="right">
+Law</th>
+	<td style="padding-left:10px;"><h1>治疗</h1></td>
+</tr>
+<tr>
+	<td rowspan="2"> <i>由</i>英雄</td>
+	<td class="texttoken right">-</td>
+	<td class="texttoken right">-</td>
+	<td class="texttoken right">-</td>
+	<td class="texttoken right">-</td>
+	<td class="texttoken right">Ø <span class="rep_emphasized">13.5 HP</span> (∑ <span class="rep_emphasized">27 HP</span>)</td>
+	<td class="texttoken right">-</td>
+	<td class="texttoken right">-</td>
+	<td style="padding-left:10px;" rowspan="2"> <i>由</i>英雄</td>
+</tr>
+<tr>
+	<td class="texttoken right">-</td>
+	<td class="texttoken right">-</td>
+	<td class="texttoken right">-</td>
+	<td class="texttoken right">-</td>
+	<td class="texttoken right">-</td>
+	<td class="texttoken right">-</td>
+	<td class="texttoken right">-</td>
+</tr>
+<tr>
+	<td rowspan="2"> <i>给</i>英雄</td>
+	<td class="texttoken right">-</td>
+	<td class="texttoken right">Ø <span class="rep_emphasized">13.5 HP</span> (∑ <span class="rep_emphasized">27 HP</span>)</td>
+	<td class="texttoken right">-</td>
+	<td class="texttoken right">-</td>
+	<td class="texttoken right">-</td>
+	<td class="texttoken right">-</td>
+	<td class="texttoken right">-</td>
+	<td style="padding-left:10px;" rowspan="2"> <i>给</i>英雄</td>
+</tr>
+<tr>
+	<td class="texttoken right">-</td>
+	<td class="texttoken right">-</td>
+	<td class="texttoken right">-</td>
+	<td class="texttoken right">-</td>
+	<td class="texttoken right">-</td>
+	<td class="texttoken right">-</td>
+	<td class="texttoken right">-</td>
+</tr>
+<tr>
+	<td rowspan="2">给自己</td>
+	<td class="texttoken right">-</td>
+	<td class="texttoken right">-</td>
+	<td class="texttoken right">-</td>
+	<td class="texttoken right">-</td>
+	<td class="texttoken right">-</td>
+	<td class="texttoken right">-</td>
+	<td class="texttoken right">-</td>
+	<td style="padding-left:10px;" rowspan="2">给自己</td>
+</tr>
+<tr>
+	<td class="texttoken right">-</td>
+	<td class="texttoken right">-</td>
+	<td class="texttoken right">-</td>
+	<td class="texttoken right">-</td>
+	<td class="texttoken right">-</td>
+	<td class="texttoken right">-</td>
+	<td class="texttoken right">-</td>
+</tr>
+<tr height="10"><td></td></tr>
+	<tr><td><h1>增益</h1></td>
+<th align="right">
+dg131313</th>
+<th align="right">
+paohui</th>
+<th align="right">
+落</th>
+<th align="right">
+0w0s</th>
+<th align="right">
+FreeJoker</th>
+<th align="right">
+D2oR</th>
+<th align="right">
+Law</th>
+	<td style="padding-left:10px;"><h1>增益</h1></td>
+</tr>
+<tr>
+	<td> <i>由</i>英雄</td>
+	<td class="texttoken right">-</td>
+	<td class="texttoken right">-</td>
+	<td class="texttoken right">-</td>
+	<td class="texttoken right">-</td>
+	<td class="texttoken right">-</td>
+	<td class="texttoken right">-</td>
+	<td class="texttoken right"><span class="rep_emphasized">2</span></td>
+	<td style="padding-left:10px;"> <i>由</i>英雄</td>
+</tr>
+<tr>
+	<td> <i>给</i>英雄</td>
+	<td class="texttoken right"><span class="rep_emphasized">1</span></td>
+	<td class="texttoken right"><span class="rep_emphasized">1</span></td>
+	<td class="texttoken right">-</td>
+	<td class="texttoken right">-</td>
+	<td class="texttoken right">-</td>
+	<td class="texttoken right">-</td>
+	<td class="texttoken right">-</td>
+	<td style="padding-left:10px;"> <i>给</i>英雄</td>
+</tr>
+<tr>
+	<td>给自己</td>
+	<td class="texttoken right">-</td>
+	<td class="texttoken right">-</td>
+	<td class="texttoken right"><span class="rep_emphasized">1</span></td>
+	<td class="texttoken right">-</td>
+	<td class="texttoken right"><span class="rep_emphasized">1</span></td>
+	<td class="texttoken right">-</td>
+	<td class="texttoken right">-</td>
+	<td style="padding-left:10px;">给自己</td>
+</tr>
+</tbody></table>
+</td>
+        </tr>
+    </tbody></table>
+
+<p>
+
+ <input type="button" name="" value="摘要" class="button clickable" onclick="document.location.href='../index.html';">    <input type="button" name="disabled" value="统计表" class="button_disabled">    <input type="button" name="items[0]" value="获得物品" class="button clickable" onclick="document.location.href='items.html';">  <input type="button" name="details[0]" value="详细资料" class="button clickable" onclick="document.location.href='level1.html';"></p>
+
+
+          </form>
+</body>
+</html>
